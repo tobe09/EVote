@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ProjectApp.Master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body  style="background-color:#fff">
+    <form id="form1" runat="server">
+
+        <div class="Header" style="left: 420px">
+            <asp:Label ID="Head1" runat="server" Font-Size="90px" Text="OAU " ForeColor="Black"></asp:Label>
+            <asp:Label ID="Head2" runat="server" Text="E-VOTE" Font-Size="90px" ForeColor="Orange"></asp:Label><br />
+            <asp:Label ID="oauLabelName" runat="server" Text="Obafemi Awolowo University, Ile-Ife, Osun State, Nigeria" Font-Size="20px" ForeColor="Orange"></asp:Label><br /><br /><br />
+        </div>
+
+        <div class="Menu" style="background-color:orange">
+            <table style="height: 25px; width: 1350px">
+            <tr style="background-color: orange;">
+        <td class="auto-style1"><h2> <a href="Home.aspx">Home</a></h2></td>
+        <td class="auto-style1"><h2> <a href="Register.aspx">Register</a>&nbsp; </h2></td>
+        <td class="auto-style1"><h2> <a href="Login and vote.aspx">Login and Vote</a></h2></td>
+        <td class="auto-style1"><h2> <a href="ForgotPassword.aspx">Forgot Password?</a></h2></td>
+                <td class="auto-style1"><h2> <a href="Contestants.aspx">Contestants</a></h2></td>
+                <td class="auto-style1"><h2> <a href="Result.aspx">Result</a></h2></td>
+                </tr>
+            </table>
+        </div>
+
+    <div class="Content" style="background-color:#fdfdfd">
+        <asp:ContentPlaceHolder ID="ContentPH" runat="server">
+
+        </asp:ContentPlaceHolder>
+        
+        <table runat="server" style="height: 40px; width: 950px" border="0">
+            <tr style="background-color: white; ">
+                <td></td>
+                </tr>
+            </table>
+
+        <table style="height: 35px; width: 950px" border="0">
+            <tr style="background-color: orange; ">
+        <td class="auto-style2" > <a href="Help.aspx" style="font-size:16px;">Help</a></td>
+        <td class="auto-style2"> <a href="ReportProblem.aspx" style="font-size:16px;">Report a problem</a></td>
+        <td class="auto-style2" > <a href="FAQ.aspx" style="font-size:16px;">FAQ</a></td>
+        <td class="auto-style2" > <a href="ContactUs.aspx" style="font-size:16px;">Contact Us</a></td>
+                </tr>
+            </table>
+        
+        <table style="height: 14px; width: 950px; background-color: orange;" border="0">
+            <tr><td style="font-size: 14px;">For Administrative use only:- </td>
+             <td style="font-style:italic;  font-size: 10px;"><a href="RegisterKey.aspx" style="background-color:yellowgreen">&nbsp;Generate Registration Keycode&nbsp;</a></td>
+            <td style="font-style:italic; font-size: 10px;"><a href="Database.aspx" style="background-color:yellowgreen">&nbsp;Access Database&nbsp;</a></td>   </tr>
+            </table><br />
+
+        <asp:Label ID="copyright" runat="server" Font-Size="Medium" ForeColor="black" Text="Copyright 2010, TCee designs and concepts. Website: www.tceedesigns.com"></asp:Label><br />
+        <asp:Label ID="rights" runat="server" Font-Italic="true" Text="All rights reserved" Font-Size="Medium" ForeColor="blue"></asp:Label><br /><br />
+    </div>
+        </form>
+
+    <style type="text/css">
+        .auto-style1 { width: 225px; text-decoration-color:white;}
+        .auto-style2 { width: 237px; text-decoration-color:white;}
+    </style>
+
+</body>
+</html>

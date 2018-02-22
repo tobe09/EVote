@@ -1,0 +1,38 @@
+﻿body {
+    font-family: Tahoma, Helvetica, Arial, sansserif;
+    font-size: 12px;
+}
+h1 {
+    font-size: 25px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+a:hover {
+    color: blue;
+}
+.Header {
+    top: 0px;
+    left: 0px;
+    width: 930px;
+    height: 140px;
+    background-repeat: repeat-x;
+    position:absolute;
+    flex-item-align:center;
+}
+.Menu {
+    top: 140px;
+    left: 0px;
+    width: 1350px;
+    height: 25px;
+    font-size: 10px;
+    position: absolute;
+}
+.Content {
+    top: 220px;
+    left: 200px;
+    width: 950px;
+    position:absolute;
+}

@@ -1,0 +1,3 @@
+Project must be run using Visual Studio development environment for optimum compatibility.
+Simply open "WebApplication1.sln" to run the project.
+Thank you.
